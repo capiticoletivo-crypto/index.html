@@ -297,7 +297,8 @@
             tempInput.select();
             
             try {
-                document.execCommand('copy');
+                // Use document.execCommand('copy') for better compatibility in iframe environments
+                document.execCommand('copy'); 
                 alertMessage('E-mail copiado! | Email copied!', 'success');
             } catch (err) {
                 alertMessage('Falha ao copiar. Tente selecionar o endereço. | Failed to copy. Try selecting the address.', 'error');
