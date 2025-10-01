@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Antropologia Visual e a Gramática Oculta | Blog</title>
+    <title>Post: Antropologia Visual | Joseane Daher Idiomas</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind for Inter font and custom colors (High Contrast Monochrome) -->
@@ -15,6 +15,7 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
+                        // Paleta de Alto Contraste: Preto e Cinza Escuro
                         'primary': '#000000', 
                         'secondary': '#333333', 
                     }
@@ -23,26 +24,38 @@
         }
     </script>
     <style>
-        /* Custom styles for the Inter font and smooth scrolling */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Estilos de conteúdo para legibilidade do post */
+        .blog-content p, .blog-content li {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .blog-content h3 {
+            font-size: 1.75rem; /* 28px */
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
     </style>
 </head>
 <body class="font-sans antialiased bg-white text-gray-900">
 
-    <!-- Navigation Bar (Garante links de navegação para a home) -->
+    <!-- Navigation Bar (Estrutura idêntica ao index.html) -->
     <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- LOGO SEMPRE APONTA PARA A PÁGINA PRINCIPAL -->
+            <!-- Garante que o LOGO sempre volte para index.html -->
             <a href="index.html" class="h-8 flex items-center">
                 <span class="text-xl font-extrabold text-primary">Joseane Daher Idiomas</span>
             </a>
             <nav class="hidden md:flex space-x-8">
-                <!-- HOME LINK EXPLÍCITO CORRETO -->
-                <a href="index.html" class="text-gray-700 hover:text-primary font-medium transition duration-300">Home</a>
+                <!-- TODOS OS LINKS DA HOME DEVEM INCLUIR "index.html" -->
                 <a href="index.html#about-me" class="text-gray-700 hover:text-primary font-medium transition duration-300">Sobre Mim | About Me</a>
                 <a href="index.html#courses" class="text-gray-700 hover:text-primary font-medium transition duration-300">Cursos | Courses</a>
                 <a href="index.html#methodology" class="text-gray-700 hover:text-primary font-medium transition duration-300">Metodologia | Methodology</a>
                 <a href="index.html#contact" class="text-gray-700 hover:text-primary font-medium transition duration-300">Contato | Contact</a>
+                <!-- LINK EXPLÍCITO PARA o blog.html -->
                 <a href="blog.html" class="text-primary font-bold transition duration-300 border-b-2 border-primary">Blog</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-primary hover:text-gray-700 focus:outline-none">
@@ -52,8 +65,6 @@
             </button>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <!-- HOME LINK EXPLÍCITO CORRETO (MOBILE) -->
-            <a href="index.html" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150 border-t">Home</a>
             <a href="index.html#about-me" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150 border-t">Sobre Mim | About Me</a>
             <a href="index.html#courses" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150">Cursos | Courses</a>
             <a href="index.html#methodology" class="block py-3 px-6 text-gray-700 hover:bg-gray-50 transition duration-150">Metodologia | Methodology</a>
@@ -62,80 +73,72 @@
         </div>
     </header>
 
-    <!-- Article Content -->
-    <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <!-- Header -->
-            <header class="mb-10 text-center">
+    <!-- Blog Post Content (Conteúdo do post individual) -->
+    <main class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            
+            <!-- Link de retorno explícito para a página de listagem do blog -->
+            <a href="blog.html" class="text-secondary font-semibold hover:text-primary mb-4 inline-flex items-center group">
+                &larr; Voltar à Lista de Posts
+            </a>
+
+            <div class="bg-gray-50 p-6 md:p-10 rounded-xl shadow-lg border border-gray-100 mt-4">
                 <p class="text-sm uppercase tracking-wider text-secondary font-semibold mb-2">Pesquisa e Ensino | Visual Anthropology</p>
-                <h1 class="text-5xl md:text-6xl font-extrabold text-primary leading-tight mb-4">
-                    A Antropologia Visual e a Gramática Oculta
+                <h1 class="text-4xl md:text-5xl font-extrabold text-primary mb-4 leading-tight">
+                    A Antropologia Visual e a Gramática Oculta da Comunicação
                 </h1>
-                <p class="text-xl text-gray-700 font-light italic border-b pb-4">
-                    Como a cultura e a imagem transformam a busca pela fluência linguística.
-                </p>
-                <p class="text-sm text-gray-500 mt-4">Postado em 1 de Outubro de 2025</p>
-            </header>
-
-            <!-- Content Body -->
-            <div class="prose max-w-none text-lg text-gray-800 space-y-6">
-                <!-- PT Section -->
-                <p class="font-semibold text-xl text-primary mt-10">
-                    O que aprendi na Amazônia: A comunicação vai além das palavras.
-                </p>
-                <p>
-                    Minha jornada acadêmica e de pesquisa, especialmente na Amazônia com Povos Indígenas, me ensinou uma verdade fundamental sobre a comunicação: a gramática visível (verbos, conjugações, regras) é apenas metade da história. A outra metade é a <strong>Gramática Oculta</strong> — composta por gestos, contexto cultural, tom de voz, silêncios e, principalmente, a percepção visual do mundo.
-                </p>
-                
-                <h2 class="text-3xl font-bold text-secondary mt-8 mb-4">
-                    1. A Imagem como Ferramenta Linguística
-                </h2>
-                <p>
-                    A Antropologia Visual estuda como as pessoas se comunicam através de imagens e como constroem significados visuais. Ao invés de focar apenas em traduzir frases, minha metodologia foca em <strong>entender a cena completa</strong>. Por que um brasileiro usaria uma gíria neste contexto? Qual a postura corporal de um nova-iorquino em uma reunião de negócios?
-                </p>
-                <p>
-                    Isso significa que nossas aulas utilizam filmes, fotografias, artes e contextos de vida reais (tanto do Brasil quanto dos EUA) como material didático primário. O objetivo é que você não apenas <strong>fale</strong> a língua, mas que a <strong>veja</strong> e a <strong>sinta</strong> em seu ambiente cultural.
+                <p class="text-md text-gray-500 border-b pb-4 mb-8">
+                    Por Joseane Daher | 1 de Outubro de 2025
                 </p>
 
-                <h2 class="text-3xl font-bold text-secondary mt-8 mb-4">
-                    2. Fluência Profunda: Da Regra ao Contexto
-                </h2>
-                <p>
-                    Muitos alunos chegam com conhecimento das regras, mas travam na hora de interagir. A chave para a <strong>fluência profunda</strong> é conectar a estrutura formal (a gramática da escola) com o uso prático (a gramática da vida).
-                </p>
-                <ul class="list-disc list-inside ml-6 space-y-2">
-                    <li><strong>Observação Ativa:</strong> Analisamos situações reais para decifrar a <strong>intenção</strong> por trás da fala, e não apenas o significado literal.</li>
-                    <li><strong>Comunicação Não-Verbal:</strong> Exploramos as diferenças culturais em contato visual, proximidade e gestos, essenciais para evitar mal-entendidos.</li>
-                    <li><strong>Narrativas Pessoais:</strong> Criamos projetos onde você usa a língua para contar sua própria história, aplicando o idioma em um contexto significativo.</li>
-                </ul>
+                <div class="blog-content text-lg text-gray-700">
+                    <p class="lead text-xl font-medium text-secondary">
+                        Minha jornada na Amazônia me ensinou mais sobre comunicação humana do que qualquer livro de gramática. Lá, percebi que a verdadeira <strong>fluência</strong> não está em conjugar verbos perfeitamente, mas em entender a <strong>"Gramática Oculta"</strong> que rege os gestos, os silêncios e o contexto cultural de uma língua. É disso que trata a Antropologia Visual no ensino de idiomas.
+                    </p>
 
-                <p class="mt-8 italic border-t pt-4 text-gray-600">
-                    Ao trazer a experiência da Antropologia Visual para a sala de aula, transformamos o aprendizado de um exercício de memorização para uma <strong>imersão cultural completa</strong>. Prepare-se para desbloquear não só a boca, mas também os olhos e a mente.
-                </p>
+                    <h3>O Que é a Gramática Oculta?</h3>
+                    <p>
+                        A gramática tradicional foca no que é dito. A Gramática Oculta, por outro lado, foca em <strong>como</strong> e <strong>por que</strong> algo é dito—ou não dito. Ela inclui:
+                    </p>
+                    <ul class="list-disc list-inside ml-6 space-y-3">
+                        <li><strong>Gestos e Expressões:</strong> Como o corpo comunica aprovação, descrença ou incômodo, e como isso varia entre culturas (por exemplo, um gesto brasileiro pode ser ofensivo em outro contexto).</li>
+                        <li><strong>Uso do Espaço:</strong> O quão perto ou longe você deve estar do seu interlocutor.</li>
+                        <li><strong>O Tom e o Silêncio:</strong> O que o silêncio significa? Quando é educado interromper?</li>
+                        <li><strong>Adequação Social:</strong> Saber quando usar o pronome formal ("o senhor/a senhora" em português) ou o informal ("você").</li>
+                    </ul>
 
-                <!-- EN Section -->
-                <p class="font-semibold text-xl text-primary mt-12 pt-6 border-t border-gray-300">
-                    <strong>English Summary: Visual Anthropology and the Hidden Grammar</strong>
-                </p>
-                <p>
-                    My background in Visual Anthropology and field research in the Amazon taught me that verbal grammar is only half of communication. The other half is the <strong>Hidden Grammar</strong>—cultural context, body language, silences, and visual perception.
-                </p>
-                <p>
-                    My teaching method moves beyond translation, focusing instead on <strong>understanding the full scene</strong>. By analyzing films, photos, and real-life scenarios, we ensure you don't just <strong>speak</strong> the language, but you also <strong>see</strong> and <strong>feel</strong> its cultural environment. This approach connects formal linguistic structure with practical, daily use, leading to true fluency.
-                </p>
+                    <h3>A Antropologia Visual em Ação</h3>
+                    <p>
+                        Na minha metodologia, usamos o olhar do antropólogo. Em vez de apenas ler diálogos, analisamos ativamente vídeos, filmes, e interações da vida real. Isso ajuda o aluno a internalizar o <strong>ritmo</strong> e o <strong>código visual</strong> da língua que está aprendendo.
+                    </p>
+                    <p>
+                        Por exemplo, ao ensinar Português do Brasil, não focamos apenas na tradução literal de "E aí, beleza?". Usamos vídeos para mostrar a entonação descontraída, a postura corporal relaxada, e os cenários onde essa frase é tipicamente utilizada. Isso transforma a palavra em <strong>comunicação culturalmente sensível</strong>.
+                    </p>
 
+                    <h3>Por Que Isso Importa Para a Sua Fluência?</h3>
+                    <p>
+                        Seu objetivo é ser entendido, mas mais importante, é <strong>se conectar</strong>. Quem domina apenas a gramática pode soar robótico ou, pior, ofender sem querer. A fluência profunda, aquela que eu ensino, permite que você navegue em situações sociais e profissionais com confiança e autenticidade. Você para de traduzir e começa a <strong>pensar na cultura do idioma</strong>.
+                    </p>
+
+                    <p class="pt-4 text-center font-bold text-primary italic">
+                        Quer ver a Gramática Oculta em ação na sua próxima aula?
+                        <a href="index.html#contact" class="text-secondary hover:underline ml-2">Agende uma aula experimental!</a>
+                    </p>
+
+                </div>
             </div>
 
-            <div class="mt-12 pt-8 border-t border-gray-200">
-                <!-- LINK VOLTAR AO BLOG CORRETO -->
-                <a href="blog.html" class="inline-flex items-center text-primary hover:text-secondary font-bold text-lg">
-                    &larr; Voltar para o Blog | Back to Blog
+            <div class="mt-12 text-center">
+                <!-- Botão de retorno para a página de listagem do blog -->
+                <a href="blog.html" class="inline-block px-6 py-3 bg-secondary text-white font-bold rounded-lg shadow-lg hover:bg-primary transition duration-300 transform hover:scale-105">
+                    Ver Todos os Posts do Blog
                 </a>
             </div>
+            
         </div>
-    </section>
+    </main>
 
-    <!-- Footer (Identical to blog.html) -->
+    <!-- Footer (Estrutura idêntica ao index.html) -->
     <footer class="bg-primary text-white py-10">
         <div class="container mx-auto px-6 text-center text-sm">
             <div class="space-x-6 mb-4 font-light">
